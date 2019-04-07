@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul,
+        li  {
+            margin:0;
+            padding:0;
+        }
+        .layout {
+            width:800px;
+            margin:0 auto;
+        }
+        .layout,h1 {
+            
+            color: #666;
+            text-align:center;
+            border-bottom:1px solid #ccc;
+            padding-bottom:10px;
+            
+        }
+        .container {
+            margin-left: -10px;
+        }
+        .container::after {
+            content:'';
+            display: block;
+            clear: both;
+
+        }
+        .container .scen{
+            float:left;
+            margin-left:10px;
+            margin-top:30px;
+            list-style:none;
+        }
+        .scen {
+            width:260px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important
+
+        }
+        .scen>img {
+            width: 100%;
+            opacity: 0.75;
+        }
+        .scen .detail {
+            padding:1px 16px
+        }
+        .scen .detail p {
+            color:#000; 
+        }
+    </style>
+</head>
+<body>
+  <div class="layout content">
+    <h1>风景列表</h1>
+      <ul class="container">
+          <li class="scen">
+             <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt>
+             <div class="detail">
+                 <p>风景如画</p>
+             </div>
+          </li>
+          <li class="scen">
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt>
+                <div class="detail">
+                    <p>风景如画</p>
+          </li>
+          <li class="scen">
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt>
+                <div class="detail">
+                    <p>风景如画</p>
+          </li>
+          <li class="scen">
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt>
+                <div class="detail">
+                    <p>风景如画</p>
+          </li>
+          <li class="scen">
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt>
+                <div class="detail">
+                    <p>风景如画</p>
+          </li>
+          <li class="scen">
+                <img src="http://cdn.jscode.me/283a4100-10cd-4208-a3b5-4030ec03acf6" alt>
+                <div class="detail">
+                    <p>风景如画</p>
+          </li>
+      </ul>
+
+  </div>
+</body>
+</html>
